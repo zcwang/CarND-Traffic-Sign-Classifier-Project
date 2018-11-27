@@ -94,14 +94,16 @@ Used an Adams optimizer with the following hyperparameters:
 4. dropout = .75  # keep_prob for dropout layers
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
+First to train the model, I started from LeNet because of simplicity of implementation and there is rich information realted to it from inernet on class recognition. After running with this architecture the model tended to overfitting in validation set (training error converged to 99% while the validation error wasn`t giving a satisfactory performance). I tried to sue dropout and data augmentation to reduce overfiting. For dropout, I used doptout from 0.5 to 0.75 then saw slow down of overfitting and achieved a slightly high accuracy in uts result. With augmented dataset I saw much increased performance on my model but also worked well on the validation set. It seesm to be worth to investgate its relashtionship between dropout and data aurgrmntation but need more computing furthur. 
+
 My final model results were:
 * training set accuracy of 99.9%
 * validation set accuracy of 96.2%
 * test set accuracy of 95.2%
 
-Unfortunately, it appears never to be observed validation set accuracy of greater than 93%, although the accuracy on the test set climbed to 99.9% (overfitting possible).
+Unfortunately, it appears never to be observed validation set accuracy of greater than 96.2%, although the accuracy on the test set climbed to 99.9% (overfitting again!).
 
-I tried training with several values of keep_prob ranging from .6 to .95, and surveied that keep_prob = 0.75 consistently delivered around 96% validation accuracy. I couldn't get it much higher than that.
+I tried training with several values of keep_prob ranging from .6 to .95, and surveied that keep_prob = 0.75 consistently delivered around 96% validation accuracy. I couldn't get it much higher than that or need more time to do research for it.
 
 ### Test a Model on New Images
 
