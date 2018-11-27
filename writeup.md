@@ -141,6 +141,63 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The cell Output Top 5 Softmax Probabilities For Each Image Found on the Web of the jupyter notebook or html output contains code for outputting softmax probabilities for each image from the web. The top five softmax probabilities for each image are listed, along with bar charts.
 
+INFO:tensorflow:Restoring parameters from ./lenet
+Top softmax probabilities:
+
+bicyclecrossing.jpg:
+
+Probabilities
+[ 0.56811255  0.30408615  0.07375071  0.05214828  0.00129091]
+
+Corresponding labels
+[21 30 23 29 31]
+
+nopassing.jpg:
+
+Probabilities
+[  9.98897552e-01   6.48155867e-04   4.48003411e-04   4.67891869e-06
+   1.08245683e-06]
+
+Corresponding labels
+[ 9 16 41 10  3]
+
+straightorright.jpg:
+
+Probabilities
+[  9.99946475e-01   5.35140352e-05   3.22273985e-09   5.16274280e-11
+   1.26560941e-11]
+
+Corresponding labels
+[36 35 34 40 20]
+
+roadwork.jpg:
+
+Probabilities
+[  9.64089334e-01   3.36754173e-02   1.99340400e-03   2.05606659e-04
+   1.83263073e-05]
+
+Corresponding labels
+[25 29 21 22 28]
+
+childrencrossing.jpg:
+
+Probabilities
+[  9.99706566e-01   2.93327495e-04   1.21100044e-07   2.07563762e-08
+   7.74976524e-12]
+
+Corresponding labels
+[28 29 30 23 18]
+
+![bicyclecrossing](./result1.png)
+
+![nopassing](./result2.png)
+
+![straightorright](./result3.png)
+
+![roadwork](./result4.png)
+
+![childrencrossing](./result5.png)
+
 For the no passing, straight or right, and road work signs, the model is very (>99%) certain.
 For the bicycle crossing sign, the network is less certain (73%) of its incorrect "Beware of ice/snow" guess. It believes the sign may also be a road work sign (13.7%) or bicycle crossing sign (9.3%).
 For the children crossing sign, the model is only 52% certain, and believes the sign may be a bicycle crossing sign with 47.6% probability. This is unsurprising because these two sign types are visually similar.
