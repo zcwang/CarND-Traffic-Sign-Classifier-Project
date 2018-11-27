@@ -113,10 +113,24 @@ I tried training with several values of keep_prob ranging from .6 to .95, and su
 
 Here are five German traffic signs that I found on the web:
 1. Bicycle crossing challenges: Writing across sign + white bar at bottom might be interpreted as a feature
+
+![Bicycle of sing type](./test2.png)
+
 2. No passing challenges: Rotated from horizontal
+
+![No passing of sing type](./test3.png)
+
 3. Turn straight or right challenges: Writing, X across sign
+
+![Turn straight or right of sing type](./test4.png)
+
 4. Road work challenges: Picture taken from low angle
+
+![Rad work of sing type](./test5.png)
+
 5. Children crossing challenges: Picture taken from low angle + writing across sign + white bar at bottom
+
+![Children crossing of sing type](./test6.png)
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
