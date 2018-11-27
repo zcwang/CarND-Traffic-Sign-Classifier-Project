@@ -134,16 +134,26 @@ Here are five German traffic signs that I found on the web:
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction (Image's Prediction)
+Here are the results of the prediction (Image's Prediction),
+
 No entry	--> No entry
+
 Yield	 --> Yield
+
 No entry	---> No entry
+
 No entry	---> No entry
+
 Stop ---> Stop
-bicycle crossing ---> be ware of snow sign ======>wrong
+
+*bicycle crossing ---> be ware of snow sign ======>wrong
+
 Keep Right ---> Keep Right
+
 No entry	---> No entry
-Bumpy Road ---> Speed limit (100km/h) ======>wrong
+
+*Bumpy Road ---> Speed limit (100km/h) ======>wrong
+
 Yield	 --> Yield
 
 The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. Both the bicycle crossing sign and the be ware of snow sign are red and white triangles with relatively delicate internal features containing crossed lines and circular patterns, so it is unsurprising that the network would confuse them. Also, bicycle crossing signs were relatively underrepresented in the initial (unaugmented) training set.
